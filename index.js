@@ -17,11 +17,13 @@ function increaseRankBy(n){
 }
 
 function deepestChild(){
+
   var deep = document.querySelector('div#grand-node').querySelectorAll('div')
   var next = [];
   for(var i = 0; i< deep.length; i++){
     next.push(deep[i]);
   }
+
   deep = next.pop();
 
   return deep;
